@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import LoginRegisterForm from './LANDING_PAGE/LandingPage.jsx';
 
 function App() {
 
 
   return (
     <>
+      <LoginRegisterForm />
     </>
   )
 }

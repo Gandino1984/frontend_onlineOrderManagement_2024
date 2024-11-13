@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './LoginRegisterForm.scss';
 
 const LoginRegisterForm = () => {
   const [isLoggingIn, setIsLoggingIn] = useState(true);
@@ -25,8 +24,8 @@ const LoginRegisterForm = () => {
       </h2>
       <form onSubmit={handleSubmit} className="form-content">
         <div className="form-field">
-          <Label htmlFor="username">Username</Label>
-          <Input
+          <label htmlFor="username">Username</label>
+          <input
             id="username"
             type="text"
             value={username}
@@ -35,8 +34,8 @@ const LoginRegisterForm = () => {
           />
         </div>
         <div className="form-field">
-          <Label htmlFor="password">Password</Label>
-          <Input
+          <label htmlFor="password">Password</label>
+          <input
             id="password"
             type="password"
             value={password}
@@ -45,9 +44,9 @@ const LoginRegisterForm = () => {
           />
         </div>
         <div className="form-actions">
-          <Button type="submit">
+          <button type="submit">
             {isLoggingIn ? 'Login' : 'Register'}
-          </Button>
+          </button>
           <button
             type="button"
             className="toggle-button"
